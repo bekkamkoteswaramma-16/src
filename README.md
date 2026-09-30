@@ -1,21 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './App.css'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-) 
-
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './App.css'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+export default function Dashboard({ setPage, user }) {
+  return (
+    <div style={{padding:'80px'}}>
+      <h1>My Profile 👤</h1>
+      <p><b>Name:</b> {user?.name}</p>
+      <p><b>Email:</b> {user?.email}</p>
+      <p><b>Role:</b> {user?.role}</p>
+      <button onClick={() => setPage('home')}>Back to Home</button>
+    </div>
+  );
+}
