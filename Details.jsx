@@ -1,7 +1,7 @@
 export default function Details({ setPage, house }) {
   if(!house) return <p>Loading...</p>
 
-  return (
+  return ( 
     <div style={{maxWidth:'800px', margin:'20px auto', padding:'20px'}}>
       <button onClick={() => setPage('home')}>← Back to Home</button> 
       
