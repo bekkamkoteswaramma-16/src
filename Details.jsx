@@ -1,4 +1,3 @@
-
 export default function Details({ setPage, house }) {
   if(!house) return <p>Loading...</p>
 
