@@ -7,5 +7,5 @@ export default function Dashboard({ setPage, user }) {
       <p><b>Role:</b> {user?.role}</p>
       <button onClick={() => setPage('home')}>Back to Home</button>
     </div>
-  );
+  ); 
 }
